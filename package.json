@@ -1,0 +1,22 @@
+{
+  "name": "repair-desing",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fakt37/repair-desing.git"
+  },
+  "author": "Andrey Semerikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fakt37/repair-desing/issues"
+  },
+  "homepage": "https://github.com/Fakt37/repair-desing#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
