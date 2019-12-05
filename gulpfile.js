@@ -12,12 +12,13 @@ function bs() {
     });
     watch("./*.html").on('change', browserSync.reload);
     watch("./sass/**/*.sass", servSass);
+    watch("./sass/**/*.scss", servSass);
     watch("./js/*.js").on('change', browserSync.reload);
 };
 
 
 function servSass() {
-    return src("./sass/*.sass")
+    return src("./sass/**/*.sass", "./sass/**/*/scss")
         .pipe(sass())
         .pipe(dest("css"))
         .pipe(browserSync.stream());
