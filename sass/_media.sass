@@ -49,6 +49,7 @@
             display: none
     .title
         font-size: 1.64rem
+        line-height: 132.83%
     .hero
         &__scroll-down
             display: none
@@ -61,8 +62,11 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-@media screen and ( max-height: 520px  )
+@media screen and ( max-height: 520px)
     .hero
         &__scroll-down
             display: none
-    
+@media screen and (max-height: 320px) 
+    .card__pricetag 
+        margin-right: 3.71rem
+        font-size: 0.85rem

@@ -357,6 +357,7 @@ img {
     margin: auto;
     margin-top: 1.714rem;
     margin-bottom: 2.79rem;
+    font-family: 'Futura Book', sans-serif;
     font-size: 1.07rem;
     line-height: 135.84%;
     max-width: 52.93rem; }
@@ -528,7 +529,7 @@ img {
   .instagram__link {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.07rem;
     line-height: 1.64rem;
     text-transform: uppercase;
     color: #E3B873;
@@ -539,7 +540,7 @@ img {
       width: 50px;
       height: 1px;
       background-color: #E3B873;
-      margin-left: 8px; }
+      margin-left: 1rem; }
 
 .title {
   margin: 0;
@@ -592,6 +593,8 @@ img {
 
 .card__pricetag {
   position: absolute;
+  max-width: 228px;
+  max-height: 54px;
   left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
@@ -707,7 +710,8 @@ img {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    line-height: 132.83%; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -723,3 +727,8 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 320px) {
+  .card__pricetag {
+    margin-right: 3.71rem;
+    font-size: 0.85rem; } }
