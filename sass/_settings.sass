@@ -8,14 +8,60 @@ body
 img
     max-width: 100%
 .section
+    padding: 60px 0
+    &-steps
+        &-title
+            margin-top: 18px
+    &--dark
+        background-color: $dark
+        color: $light
+    &-subtitle
+        font-family: 'Futura Demi'
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        line-height: 21px
+        text-transform: uppercase
     &-title
-        padding-top: 6.57rem
         text-align: center
+        &--left
+            text-align: left
         &__heading
             font-family: 'Yeseva One', cursive
+            font-style: normal
+            font-weight: normal
+            font-size: 27px
+            line-height: 37px
             text-transform: uppercase
-            font-size: 1.43rem
-            line-height: 2rem
+            margin: 0
+            &__projects
+                letter-spacing: -0.07em
+            &--primary
+                color: $primary
+            &__word__projects
+                display: flex
+                align-items: center
+                &::after
+                    content: ''
+                    width: 92px
+                    height: 1px
+                    background-color: $primary
+                    margin-left: 2.4rem
+            &__word__steps
+                display: flex
+                align-items: center
+                &::after
+                    content: ''
+                    width: 92px
+                    height: 1px
+                    background-color: $primary
+                    margin-left: 6.2rem
+        &__text
+            font-size: 1.28rem
+            line-height: 2.07rem
+            max-width: 31.57rem
+            margin-top: 1.5rem
+            margin-bottom: 2rem
         &__image
             display: flex
             justify-content: center
@@ -30,9 +76,8 @@ img
             margin: auto
             margin-top: 1.714rem
             margin-bottom: 2.79rem
-            font-family: 'Futura Book', sans-serif
-            font-size: 1.07rem
-            line-height: 135.84%
+            font-size: 1.42rem
+            line-height: 1.93rem
             max-width: 52.93rem
 
             

@@ -12,6 +12,41 @@
     html
         font-size: 12px
 @media screen and ( max-width: 992px )
+    .swiper
+        &-slide
+            &__image
+                height: 202px
+                max-width: 340px
+                margin-top: 0
+    .section
+        &-title
+            &__heading
+                font-style: normal
+                font-weight: normal
+                font-size: 22px
+                line-height: 138.6%
+                text-align: center
+                letter-spacing: -0.07em
+                text-transform: uppercase
+                &__word
+                    display: flex
+                    justify-content: center
+                    &::after
+                        content: ''
+                        width: 0
+                        height: 0
+                        margin-left: 0
+            &__text
+                font-family: 'Futura Book'
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 158.48%
+                text-align: center
+                max-width: 305px
+                margin-top: 22px
+                margin-bottom: 41px
+                
     .nav
         display: none
     .hero
@@ -19,10 +54,36 @@
             display: none
         &__content
             margin-left: 0
-@media screen and ( max-width: 760px )
+@media screen and ( max-width: 812px )
+    .mobile-order-top
+        order: -1     
     .row
         flex-direction: column
         align-items: center
+    .col-50
+        width: 100%
+    .col-40
+        margin-top: 20px
+        width: 100%
+    .swiper
+        &-wrapper
+            margin-bottom: 9px
+        &-slide
+            display: flex
+            flex-wrap: nowrap
+            &__heading
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 138.6%
+            &__value
+                font-family: 'Futura Book'
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 135.84%
+@media screen and ( max-width: 760px )
+    
     .types
         &__card
             margin-bottom: 5.64rem
@@ -37,9 +98,25 @@
         &__card
             margin-bottom: 5.7rem
 @media screen and ( max-width: 570px )
-    .section-title
-        &__description
-            max-width: 21.86rem
+    .types
+        &__card, .desing__card
+        width: 100%
+    .container
+        margin-left: auto
+        margin-right: auto
+    .section
+        &--dark
+            padding: 36px 0
+        &-title
+            &__description
+                font-size: 18px
+                line-height: 135.84%
+                max-width: 21.86rem
+            &__heading
+                font-style: normal
+                font-weight: normal
+                font-size: 22px
+                line-height: 138.6%
     .contacts
         &__phone
             margin-right: 0
@@ -48,25 +125,30 @@
         &__button
             display: none
     .title
-        font-size: 1.64rem
+        font-style: normal
+        font-weight: normal
+        font-size: 23px
         line-height: 132.83%
     .hero
+        &::after
+            content: ''
+            height: 61px
+            background: #13131300
         &__scroll-down
             display: none
-        &__content
-            max-width: 22.86rem
         &__text
             font-size: 1.29rem
             margin-bottom: 2.28rem
         &__button
-            display: block
-            min-width: 22.86rem
-            margin-bottom: 1.85rem
-@media screen and ( max-height: 520px)
+            max-width: 100%
+            height: 51px
+            margin-bottom: 2rem
+@media screen and ( max-height: 520px  )
     .hero
         &__scroll-down
             display: none
-@media screen and (max-height: 320px) 
-    .card__pricetag 
-        margin-right: 3.71rem
-        font-size: 0.85rem
+    .section
+        &-title
+            &__text
+                max-width: 305px
+            

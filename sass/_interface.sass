@@ -17,8 +17,26 @@
         border: 1px solid $light
         background-color: transparent
         color: $light
+    &-up
+        display: none
+        position: fixed
+        bottom: 2.85rem
+        right: 2.85rem
+        opacity: 0.6
+        transition: 0.5s
+        width: 30px
+        height: 30px
+        background: #000 url("../img/arrow-up.svg") no-repeat center
+        border: 1.5px solid #E3B873
+        border-radius: 50%
+        &:hover
+            cursor: pointer
+.pricetag--desing
+    width: 16.28rem
 .label
     font-size: 1.07rem
+    line-height: 20px
+    margin: -1px
     &--light
         color: rgba($light, 0.5)
 .input
@@ -39,6 +57,8 @@
                 &::before
                     background: $primary url('../img/check.svg') no-repeat center / 0.8rem
     &__lable
+        font-size: 16px
+        line-height: 22px
         display: flex
         align-items: center
         &::before
