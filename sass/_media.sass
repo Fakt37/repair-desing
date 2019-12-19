@@ -12,6 +12,8 @@
     html
         font-size: 12px
 @media screen and ( max-width: 992px )
+    .projects
+        padding-bottom: 20px
     .swiper
         &-slide
             &__image
@@ -28,7 +30,7 @@
                 text-align: center
                 letter-spacing: -0.07em
                 text-transform: uppercase
-                &__word
+                &__word__projects
                     display: flex
                     justify-content: center
                     &::after
@@ -46,7 +48,12 @@
                 max-width: 305px
                 margin-top: 22px
                 margin-bottom: 41px
-                
+    .control
+        background: $dark
+        &__section
+            &-title
+                margin-bottom: 2.214rem
+                margin-top: -50px     
     .nav
         display: none
     .hero
@@ -83,7 +90,6 @@
                 font-size: 14px
                 line-height: 135.84%
 @media screen and ( max-width: 760px )
-    
     .types
         &__card
             margin-bottom: 5.64rem
@@ -98,6 +104,57 @@
         &__card
             margin-bottom: 5.7rem
 @media screen and ( max-width: 570px )
+    .control
+        padding-bottom: 7.5rem
+        &__video
+            min-height: 14.785rem
+            background-size: cover
+            margin: 0
+            margin-bottom: 28px
+        &__text
+            max-width: 24.285rem
+            font-style: normal
+            font-weight: normal
+            font-size: 1rem
+            line-height: 24px
+            color: $light
+            &::before
+                margin-bottom: 26px
+        &__form
+            display: block
+        &__label
+            font-family: 'Futura Book'
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 20px
+            color: rgba(255, 255, 255, 0.5)
+           
+        &__input
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 138.72%
+            margin-bottom: 63px
+            order: 1
+            &::placeholder
+                color: $light
+        &__policy
+            margin-top: -10.5rem
+            color: $light
+        &__button
+            width: 340px
+            height: 51px
+            margin-top: 1.5rem
+            transform: translateY(50%)
+    .video
+        margin-top: 3.5rem
+        min-height: 207px
+        &__play
+            position: relative
+            width: 65px
+            height: 65px
+            margin: auto
     .types
         &__card, .desing__card
         width: 100%
@@ -115,7 +172,7 @@
             &__heading
                 font-style: normal
                 font-weight: normal
-                font-size: 22px
+                font-size: 24px
                 line-height: 138.6%
     .contacts
         &__phone

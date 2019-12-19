@@ -23,6 +23,11 @@
   }); */
 
   $(document).ready(function () {
+    new WOW().init();
+    
+    $(window).scroll(function(){
+      $('.card__image ').addClass('card__animation', $(this).scrollTop() > 3000);
+  });
     var modal = $('.modal'),
         modalDialog = $('.modal__dialog'),
         modalBtn = $('[data-toggle="modal"]'),
@@ -114,4 +119,6 @@
             $('.steps__tabs-item').removeClass('active');
             $('.steps__tabs-item').eq(event).addClass('active');
           }))
+
+          
 });
