@@ -25,9 +25,9 @@
   $(document).ready(function () {
     new WOW().init();
     
-    $(window).scroll(function(){
+   /* $(window).scroll(function(){
       $('.card__image ').addClass('card__animation', $(this).scrollTop() > 3000);
-  });
+   }); */
     var modal = $('.modal'),
         modalDialog = $('.modal__dialog'),
         modalBtn = $('[data-toggle="modal"]'),
@@ -110,15 +110,46 @@
             $('.steps__tabs-item').removeClass('active');
             $(this).addClass('active');
             const event = $(this).data('index');
-            stepsSwiper.slideTo(event)
+            stepsSwiper[0].slideTo(event);
+            stepsSwiper[1].slideTo(event);
           })
         
-          stepsSwiper.on('slideChange', (function () {
-            let event = stepsSwiper.activeIndex - 1;
+          stepsSwiper[0].on('slideChange', (function () {
+            let event = stepsSwiper[0].activeIndex - 1;
             if (event === 6) {event=0};
             $('.steps__tabs-item').removeClass('active');
             $('.steps__tabs-item').eq(event).addClass('active');
           }))
 
-          
+          //Валидация формы
+          $('.modal__form').validate({
+            errorClass: "invalid",
+            rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2
+              },
+              userPhone: "required",
+
+              // compound rule
+              userEmail: {
+                required: true,
+                email: true
+              }
+            },
+            messages: {
+              userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче двух букв"
+              },
+              userPhone: "Телефон обязателен",
+
+              userEmail: {
+                required: "Обязательно укажите email",
+                email: "Введите в формате name@domain.com"
+              }
+            }
+          });
+         $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 });

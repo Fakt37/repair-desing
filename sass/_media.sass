@@ -1,7 +1,11 @@
 @media screen and (max-width: 1375px) 
     .nav__item 
         margin-right: 1rem
-
+@media screen and ( max-width: 1225px )
+    .steps
+        &__tabs
+            &-item  
+                margin-right: 9rem  
 @media screen and ( max-width: 1200px )
     html
         font-size: 13px
@@ -12,6 +16,30 @@
     html
         font-size: 12px
 @media screen and ( max-width: 992px )
+    .mobile-order-top
+        order: -1     
+    .row
+        flex-direction: column
+        align-items: center
+    .col-30
+        margin-bottom: 110px
+    .desing
+        background-color: $dark
+        color: $light
+    .comand
+        background-color: $dark
+        margin-top: 0
+        &__description
+            display: none
+        &__text
+            max-width: 340px
+            font-family: 'Futura Book'
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 135.84%
+    .steps
+        display: none
     .projects
         padding-bottom: 20px
     .swiper
@@ -20,58 +48,6 @@
                 height: 202px
                 max-width: 340px
                 margin-top: 0
-    .section
-        &-title
-            &__heading
-                font-style: normal
-                font-weight: normal
-                font-size: 22px
-                line-height: 138.6%
-                text-align: center
-                letter-spacing: -0.07em
-                text-transform: uppercase
-                &__word__projects
-                    display: flex
-                    justify-content: center
-                    &::after
-                        content: ''
-                        width: 0
-                        height: 0
-                        margin-left: 0
-            &__text
-                font-family: 'Futura Book'
-                font-style: normal
-                font-weight: normal
-                font-size: 14px
-                line-height: 158.48%
-                text-align: center
-                max-width: 305px
-                margin-top: 22px
-                margin-bottom: 41px
-    .control
-        background: $dark
-        &__section
-            &-title
-                margin-bottom: 2.214rem
-                margin-top: -50px     
-    .nav
-        display: none
-    .hero
-        &__instagram
-            display: none
-        &__content
-            margin-left: 0
-@media screen and ( max-width: 812px )
-    .mobile-order-top
-        order: -1     
-    .row
-        flex-direction: column
-        align-items: center
-    .col-50
-        width: 100%
-    .col-40
-        margin-top: 20px
-        width: 100%
     .swiper
         &-wrapper
             margin-bottom: 9px
@@ -89,23 +65,48 @@
                 font-weight: normal
                 font-size: 14px
                 line-height: 135.84%
-@media screen and ( max-width: 760px )
-    .types
-        &__card
-            margin-bottom: 5.64rem
-    .card
-        &__text
-            margin-left: 0
-    .desing
-        background-color: $dark
-        &__section-title
-            color: $light
-            margin-bottom: 2.78rem
-        &__card
-            margin-bottom: 5.7rem
-@media screen and ( max-width: 570px )
+    .section
+        &-title
+            &__description
+                font-family: 'Futura Book'
+                max-width: 306px
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 135.84%
+            &__heading
+                font-style: normal
+                font-weight: normal
+                font-size: 22px
+                line-height: 2.142rem
+                text-align: center
+                text-transform: uppercase
+                &__word__projects
+                    display: flex
+                    justify-content: center
+                    &::after
+                        content: ''
+                        width: 0
+                        height: 0
+                        margin-left: 0
+            &__text
+                font-family: 'Futura Book'
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 158.48%
+                text-align: center
+                max-width: 305px
+                margin: auto
+                margin-top: 22px
+                margin-bottom: 41px
     .control
+        background: $dark
         padding-bottom: 7.5rem
+        &__section
+            &-title
+                margin-bottom: 2.214rem
+                margin-top: -50px     
         &__video
             min-height: 14.785rem
             background-size: cover
@@ -128,8 +129,7 @@
             font-weight: normal
             font-size: 15px
             line-height: 20px
-            color: rgba(255, 255, 255, 0.5)
-           
+            color: rgba(255, 255, 255, 0.5)  
         &__input
             font-style: normal
             font-weight: normal
@@ -143,18 +143,62 @@
             margin-top: -10.5rem
             color: $light
         &__button
-            width: 340px
+            width: 100%
+            max-width: 340px
             height: 51px
+            margin: auto
             margin-top: 1.5rem
             transform: translateY(50%)
     .video
+        min-height: 307px
+        margin: auto
         margin-top: 3.5rem
-        min-height: 207px
+        margin-bottom: 28px
         &__play
             position: relative
             width: 65px
             height: 65px
             margin: auto
+    .nav
+        display: none
+    .hero
+        &__instagram
+            display: none
+        &__content
+            margin-left: 0
+    
+@media screen and ( max-width: 760px )
+    .types
+        &__card
+            margin-bottom: 5.64rem
+    .card
+        &__text
+            margin-left: 0
+    .desing
+        background-color: $dark
+        &__section-title
+            color: $light
+            margin-bottom: 2.78rem
+        &__card
+            margin-bottom: 5.7rem
+@media screen and ( max-width: 570px )
+    .footer
+        background: $dark
+        &__menu
+            display: none
+        &__wrap
+            margin: 0
+            padding: 0
+            background-color: $dark
+        &__input
+            &-group
+                flex-basis: 100%
+        &__button
+            width: 340px
+    .policy
+        &__lable
+            &--center
+                justify-content: flex-start
     .types
         &__card, .desing__card
         width: 100%
@@ -200,7 +244,9 @@
             max-width: 100%
             height: 51px
             margin-bottom: 2rem
-@media screen and ( max-height: 520px  )
+@media screen and ( max-height: 520px )
+    .video
+        min-height: 207px
     .hero
         &__scroll-down
             display: none
@@ -208,4 +254,7 @@
         &-title
             &__text
                 max-width: 305px
+    
+        
+
             
