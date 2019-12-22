@@ -125,6 +125,7 @@ $(document).ready(function () {
       errorClass: "invalid",
       rules: {
         // simple rule, converted to {required:true}
+        policyCheckbox: "required",
         userName: {
           required: true,
           minlength: 2,
@@ -148,6 +149,7 @@ $(document).ready(function () {
           required: "Имя обязательно",
           minlength: "Имя не короче двух букв"
         },
+        policyCheckbox: "Подтвердите согланисе на обработку данных",
         userPhone: "Телефон обязателен",
         userQuetion: {
           required: "Вопрос обязателен",
@@ -201,6 +203,13 @@ $(document).ready(function () {
 
     myMap.geoObjects
         .add(myPlacemark)
+        myMap.behaviors
+        // Отключаем часть включенных по умолчанию поведений:
+        //  - drag - перемещение карты при нажатой левой кнопки мыши;
+        //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+        .disable(['scrollZoom', 'rightMouseButtonMagnifier'])
+        // Включаем линейку.
+        .enable('ruler');
 });
 
 });
