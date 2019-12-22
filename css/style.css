@@ -788,6 +788,9 @@ input.invalid {
   .control__policy-label {
     justify-content: center; }
 
+.control__input {
+  color: #131313; }
+
 .control__input-group {
   display: flex;
   flex-direction: column;
@@ -967,7 +970,8 @@ input.invalid {
 .comand {
   margin-top: -35rem; }
   .comand__foto {
-    position: relative; }
+    position: relative;
+    width: 70%; }
   .comand__title {
     position: absolute; }
   .comand__text {
@@ -1016,7 +1020,7 @@ input.invalid {
 
 .foto__text {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   margin-top: -101px;
   width: 233px;
   height: 137px;
@@ -1059,7 +1063,8 @@ input.invalid {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  padding-bottom: 3.714rem; }
   .footer::before {
     content: '';
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%); }
@@ -1067,7 +1072,6 @@ input.invalid {
     background-color: #181818;
     max-width: 63.07rem;
     margin: auto;
-    margin-bottom: 3.714rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -1187,6 +1191,8 @@ input.invalid {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    width: 100%; }
   .col-30 {
     margin-bottom: 110px; }
   .desing {
@@ -1204,6 +1210,8 @@ input.invalid {
       font-weight: normal;
       font-size: 15px;
       line-height: 135.84%; }
+    .comand__foto {
+      width: 100%; }
   .steps {
     display: none; }
   .projects {
@@ -1327,6 +1335,9 @@ input.invalid {
     margin-left: 0; } }
 
 @media screen and (max-width: 760px) {
+  .col-40 {
+    width: 100%;
+    margin: auto; }
   .types__card {
     margin-bottom: 5.64rem; }
   .card__text {
