@@ -9,28 +9,76 @@
 @media screen and ( max-width: 1200px )
     html
         font-size: 13px
+    .hero
+        &__button
+            &--outline
+                padding: 0
     .nav
         &__item
             margin-right: 1rem
-@media screen and (max-width: 1080px)
+    .clients
+        &__card
+            padding: 1.5rem 1rem 5rem 1rem
+@media screen and (max-width: 1100px)
     html
         font-size: 12px
-@media screen and ( max-width: 992px )
+    .clients
+        &__card
+            padding: 1rem 1rem 5rem 1rem
+@media screen and ( max-width: 991px )
+    .section
+        &-title
+            &__text
+                text-align: center
+                margin: auto
+                margin-top: 27px
+                margin-bottom: 41px
+            &__heading
+                font-style: normal
+                font-weight: normal
+                font-size: 22px
+                line-height: 138.6%
+                text-align: center
+                text-transform: uppercase
+                &--projects
+                    display: flex
+                    justify-content: center
+                    &::after
+                        content: ''
+                        width: 0
+                        height: 0
+                        margin-left: 0 
+            &__image
+                margin-top: 1.2rem
     .mobile-order-top
         order: -1     
     .row
         flex-direction: column
         align-items: center
+        &__projects
+            margin-left: 0
+    .col-30
+        width: auto
+        margin: 13px 15px
+        &--comand
+            width: auto
+            margin: 0 0 110px 0
+    .col-40
+        max-width: 340px
+        width: 100%
     .col-50
         width: 100%
-    .col-30
-        margin-bottom: 110px
+        margin-bottom: 15px
     .desing
+        padding-top: 4rem
         background-color: $dark
-        color: $light
+        &__section-title
+            color: $light
     .comand
         background-color: $dark
         margin-top: 0
+        padding-top: 1rem
+        padding-bottom: 20rem
         &__description
             display: none
         &__text
@@ -41,10 +89,19 @@
             font-size: 15px
             line-height: 135.84%
         &__foto
-            width: 100%
+            width: 304px
+            img
+                width: 304px
+                height: 358px
+    .foto__subtitle
+        margin-bottom: 2.9rem
+    .clients
+        background-color: $dark
+        display: none
     .steps
         display: none
     .projects
+        padding-top: 36px
         padding-bottom: 20px
     .swiper
         &-slide
@@ -69,44 +126,8 @@
                 font-weight: normal
                 font-size: 14px
                 line-height: 135.84%
-    .section
-        &-title
-            &__description
-                font-family: 'Futura Book'
-                max-width: 306px
-                font-style: normal
-                font-weight: normal
-                font-size: 15px
-                line-height: 135.84%
-            &__heading
-                font-style: normal
-                font-weight: normal
-                font-size: 22px
-                line-height: 2.142rem
-                text-align: center
-                text-transform: uppercase
-                &__word__projects
-                    display: flex
-                    justify-content: center
-                    &::after
-                        content: ''
-                        width: 0
-                        height: 0
-                        margin-left: 0
-            &__text
-                font-family: 'Futura Book'
-                font-style: normal
-                font-weight: normal
-                font-size: 14px
-                line-height: 158.48%
-                text-align: center
-                max-width: 305px
-                margin: auto
-                margin-top: 22px
-                margin-bottom: 41px
     .control
         background: $dark
-        padding-bottom: 7.5rem
         &__section
             &-title
                 margin-bottom: 2.214rem
@@ -114,17 +135,12 @@
         &__video
             min-height: 14.785rem
             background-size: cover
-            margin: 0
             margin-bottom: 28px
+            max-width: 100%
         &__text
-            max-width: 24.285rem
-            font-style: normal
-            font-weight: normal
-            font-size: 1rem
-            line-height: 24px
             color: $light
             &::before
-                margin-bottom: 26px
+                margin-bottom: 15px
         &__form
             display: block
         &__label
@@ -141,28 +157,42 @@
             line-height: 138.72%
             margin-bottom: 63px
             order: 1
+            color: $light
             &::placeholder
                 color: $light
         &__policy
             margin-top: -10.5rem
             color: $light
+            &--label
+                justify-content: flex-start
+            &--block
+                margin: 0
         &__button
             width: 100%
-            max-width: 340px
             height: 51px
             margin: auto
-            margin-top: 1.5rem
+            margin-top: 1rem
             transform: translateY(50%)
+    .types
+        padding: 82px 0 0 0
+        &__card
+            margin-bottom: 4rem
+    .card
+        &__image
+            width: 340px
+        &__text
+            max-width: 22.5rem
+            margin-top: -11.7rem
     .video
-        min-height: 307px
-        margin: auto
-        margin-top: 3.5rem
-        margin-bottom: 28px
+        position: 
+        width: 821px
+        height: 434px
         &__play
-            position: relative
+            position: absolute
             width: 65px
             height: 65px
-            margin: auto
+            top: calc(50% - 65px / 2)
+            left: calc(50% - 65px / 2)
     .nav
         display: none
     .hero
@@ -170,14 +200,17 @@
             display: none
         &__content
             margin-left: 0
-    
+    .footer
+        &__icons
+            margin-top: 
+            &--email, &--instagram
+                width: 39px
+                height: 39px
+    .ymap-container
+        width: 90%
 @media screen and ( max-width: 760px )
-    .col-40
-        width: 100%
-        margin: auto
-    .types
-        &__card
-            margin-bottom: 5.64rem
+    .header__button
+        display: none
     .card
         &__text
             margin-left: 0
@@ -188,11 +221,36 @@
             margin-bottom: 2.78rem
         &__card
             margin-bottom: 5.7rem
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 570px )  
+    .ymap-container
+        order: -1
+        max-height: 255px
+        max-width: 340px
+        width: 100%
+        margin-bottom: 3.6rem
+    .comand
+        padding-bottom: 36px
     .footer
+        margin-top: -76px
+        padding-bottom: 0
         background: $dark
+        &__title
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            text-align: center
+            margin-bottom: 4.2rem
+        &__input-group
+            margin-bottom: 5.2rem
+        &__icons
+            margin-bottom: 38px
         &__menu
             display: none
+        &__subtitle
+            font-size: 1.5rem
+            line-height: 138.6%
+            margin-bottom: -0.3rem
         &__wrap
             margin: 0
             padding: 0
@@ -201,7 +259,11 @@
             &-group
                 flex-basis: 100%
         &__button
-            width: 340px
+            width: 100%
+            margin-bottom: 1rem
+        &__policy
+            margin-top: -5rem
+            margin-bottom: 5.6rem
     .policy
         &__lable
             &--center
@@ -212,31 +274,17 @@
     .container
         margin-left: auto
         margin-right: auto
-    .section
-        &--dark
-            padding: 36px 0
-        &-title
-            &__description
-                font-size: 18px
-                line-height: 135.84%
-                max-width: 21.86rem
-            &__heading
-                font-style: normal
-                font-weight: normal
-                font-size: 24px
-                line-height: 138.6%
-    .contacts
+    .header
         &__phone
             margin-right: 0
             color: $light
             text-decoration: none
-        &__button
-            display: none
     .title
         font-style: normal
         font-weight: normal
         font-size: 23px
         line-height: 132.83%
+        width: 339px
     .hero
         &::after
             content: ''
@@ -245,23 +293,95 @@
         &__scroll-down
             display: none
         &__text
-            font-size: 1.29rem
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 135.84%
             margin-bottom: 2.28rem
-        &__button
+            max-width: 321px
+        &__button, &__button--outline
             max-width: 100%
             height: 51px
             margin-bottom: 2rem
-@media screen and ( max-height: 520px )
     .video
-        min-height: 207px
+        min-height: 0
+        height: 207px
+    .control
+        &__text
+            font-family: 'Futura Book'
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 169.8%
+            width: 340px
+            margin-bottom: 30px
+@media screen and (max-width: 520px)
     .hero
         &__scroll-down
             display: none
     .section
         &-title
             &__text
+                font-family: 'Futura Book'
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 158.48%
+                text-align: center
                 max-width: 305px
-    
-        
-
+                margin: auto
+                margin-top: 27px
+                margin-bottom: 41px
+            &__description
+                font-family: 'Futura Book'
+                max-width: 306px
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 135.84%
+@media screen and (max-width: 370px)
+    .title
+        font-size: 20px
+        width: 90%
+    .col-30
+        width: 90%
+    .control
+        &__text
+            width: 95%
+    .hero
+        &__button
+            margin-right: 0
+        &__text
+            max-width: 90%
+    .card
+        &__text
+            width: 80%
+        &__image
+            width: 95%
+    .comand
+        &__foto
+            width: 95%
+@media screen and (max-height: 520px)
+    .hero
+        &__scroll-down
+            display: none
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    .instagram
+        &__link
+            position: relative
+            &::after
+                position: absolute
+                top: 10px
+    .hero
+        &__scroll-down
+            padding-top: 25px
+    .swiper-slide__text
+        padding-bottom: 70px
+    .foto__experience
+        padding: 14px 43px
+    .footer__subtitle
+        left: 30%
+    .swiper-slide
+        img
+            width: 100%
             

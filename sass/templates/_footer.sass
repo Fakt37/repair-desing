@@ -11,10 +11,10 @@
         background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
     &__wrap
         position: relative
-        background-color: $black
+        background: $black url('../img/footer-bg-wrap.png') no-repeat center / cover
         max-width: 63.07rem
         margin: auto
-        margin-top: -20rem
+        margin-top: -18.4rem
         padding: 2.5rem
         margin-bottom: 52px
     &__title
@@ -35,7 +35,7 @@
         text-align: center
         text-transform: uppercase
         color: $primary
-        max-width: 589px
+        max-width: 35.081rem
         margin: auto
     &__form
         display: flex
@@ -45,7 +45,10 @@
         margin: auto
     &__input
         padding-top: 0.3rem
+        &::placeholder
+                color: $light
         &-group
+            position: relative
             display: flex
             flex-direction: column
             flex-basis: 45%
@@ -54,6 +57,7 @@
                 flex-basis: 100%
                 margin-bottom: 2rem
     &__policy
+        position: relative
         justify-content: center
         flex-basis: 100%
         margin-bottom: 3.6rem
@@ -61,18 +65,102 @@
         margin: auto
         width: 200px
         height: 51px
+        font-style: normal
+        padding: 20px 54px 19px 54px
     &__icons
         position: relative
         border: none
         text-align: center
         margin-top: 26px
-        margin-bottom: 43px
         & a
             margin-right: 15px
     &__menu
         background-color: $dark
         padding: 4.285rem 0
     &__map
-        min-height: 465px
-        max-width: 965px
-        margin: 0 auto
+        width: 100%
+        height: 100%
+    &__info
+        display: flex
+        flex-direction: column
+        align-content: center
+    &__phone
+        display: inline-block
+        text-decoration: none
+.ymap-container
+    width: 925px
+    margin: auto
+    margin-top: 3rem
+    margin-bottom: 2rem
+    background: url('../img/yandex-before-load-marker.png') #fff no-repeat
+    background-size: cover
+    background-position: center
+    box-shadow: 0 0 2em 0 rgba(0,0,0,.2)
+    position: relative
+    overflow: hidden
+    cursor: pointer
+    z-index: 15
+.loader 
+	color:#000
+	position: absolute
+	box-sizing: border-box
+	top: -100%
+	left: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+	z-index: 15
+	transition: opacity .7s ease
+	background-color:rgba(0,0,0,0.55)
+	opacity: 0
+
+.loader::after,
+.loader::before 
+	box-sizing: border-box
+.loader.is-active 
+	top: 0
+	opacity: 1
+.loader-default:after 
+	content: ''
+	position: absolute
+	width: 48px
+	height: 48px
+	border: solid 8px #fff
+	border-left-color: transparent
+	border-radius: 50%
+	top: calc(50% - 24px)
+	left: calc(50% - 24px)
+	-webkit-animation: rotation 1s linear infinite
+	        animation: rotation 1s linear infinite
+#map-yandex 
+	cursor: pointer
+	min-height: 33.214rem
+	background-color: transparent
+	position: relative
+	z-index: 7
+@-webkit-keyframes rotation 
+	from 
+		-webkit-transform: rotate(0)
+		        transform: rotate(0)
+	to 
+		-webkit-transform: rotate(359deg)
+		        transform: rotate(359deg)
+
+@keyframes rotation 
+	from 
+		-webkit-transform: rotate(0)
+		        transform: rotate(0)
+	
+	to 
+		-webkit-transform: rotate(359deg)
+		        transform: rotate(359deg)
+@-webkit-keyframes blink 
+	from 
+		opacity: 0.5
+	to 
+		opacity: 1
+@keyframes blink 
+	from 
+		opacity: 0.5
+	to 
+		opacity: 1

@@ -1,9 +1,16 @@
 .button
-    padding: 11px 24px
+    min-width: 161px
+    min-height: 37px
     border: none
     border-radius: 2px
+    font-family: 'Futura Demi'
+    font-weight: 500
+    font-size: 13px
+    line-height: 15px
+    text-align: center
     text-transform: uppercase
     font-size: 0.93rem
+    outline: none
     &:hover
         cursor: pointer
     &--primary
@@ -17,6 +24,9 @@
         border: 1px solid $light
         background-color: transparent
         color: $light
+        &:hover
+            border: 1px solid $primary
+            color: $primary
     &-up
         display: none
         position: fixed
@@ -24,8 +34,8 @@
         right: 2.85rem
         opacity: 0.6
         transition: 0.5s
-        width: 30px
-        height: 30px
+        width: 31px
+        height: 31px
         background: #000 url("../img/arrow-up.svg") no-repeat center
         border: 1.5px solid #E3B873
         border-radius: 50%
@@ -46,9 +56,12 @@
     font-size: 1.285rem
     color: $light
     padding: 0.5rem 0
+    outline: none
     &--light
         &::placeholder
             color: $light
+.act
+    background: $primary url('../img/check.svg') no-repeat center / 0.8rem 
 .policy
     &__checkbox
         opacity: 0
@@ -62,6 +75,7 @@
         line-height: 22px
         display: flex
         align-items: center
+        flex-wrap: wrap
         &::before
             content: ''
             width: 18px

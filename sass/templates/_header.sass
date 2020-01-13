@@ -3,9 +3,11 @@
     left: 0
     top: 0
     width: 100%
-    z-index: 4
+    z-index: 99
     background-color: $dark
     padding: 1.71rem 0
+    &__button
+        padding: 0.85rem 1.5rem 0.85rem 1.428rem
 .menu
     display: flex
     justify-content: space-between
@@ -14,8 +16,12 @@
     font-weight: 500
     font-size: 1.075rem
     line-height: 1.14rem
-    color: $primary
+    
     text-transform: uppercase
+    & a
+        color: $primary
+        outline: none
+        text-decoration: none
 .nav
     margin-left: 1.4rem
     &__item
@@ -30,8 +36,9 @@
         transition: 0.2
         &:hover
             color: $primary
+            transition: all 0.4s
 .phone
     color: $primary
-.contacts
+.header
     &__phone
         margin-right: 3.214rem

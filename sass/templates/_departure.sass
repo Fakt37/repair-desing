@@ -1,0 +1,125 @@
+.departure
+    width: 100%
+    height: 670px
+    margin-top: 180px
+    background:#fff
+    display: flex
+    justify-content: space-between
+    &__stages
+        position: relative
+        width: 778px
+        height: 95%
+        overflow: hidden
+        &-background
+            height: 100%
+            background: url(../img/bg-departure.png) no-repeat
+            background-size: auto 90%
+        &-circle
+            position: absolute
+            top: 0
+            left: -25%
+            width: 637px
+            height: 637px
+            border: 2px solid $primary
+            border-radius: 50%
+            &__inner-wrapper
+                position: relative
+                width: 100%
+                height: 100%
+            &__icon
+                width: 62px
+                height: 62px
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                font-family: "Yeseva One", cursive
+                text-align: center
+                color: $light
+                background: $primary
+                border: 10px solid $light
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+            &__text
+                width: 364px
+                margin-left: 8px
+                font-size: 18px
+                line-height: 21px
+                font-family: "Futura Medium", sans-serif
+            &__stage-1
+                position: absolute
+                top: 42px
+                left: 505px
+                width: 87%
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &__stage-2
+                position: absolute
+                top: 160px
+                left: 580px
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &__stage-3
+                position: absolute
+                top: 323px
+                left: 605px
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &__stage-4
+                position: absolute
+                top: 480px
+                left: 540px
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+    &__form
+        align-self: flex-end
+        max-width: 506px
+        width: 35%
+        height: 92%
+        margin-right: 215px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: -50px
+        &__dialog
+            position: relative
+            width: 100%
+            height: 509px
+            background: $dark url('../img/bg-lines.svg') no-repeat center
+            padding: 23px 49px
+            color: $light
+        &__title
+            font-family: 'Futura Demi'
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 25px
+            text-align: center
+            max-width: 297px
+            margin: auto
+            margin-bottom: 39px
+        &__input
+            &-group
+                display: flex
+                flex-direction: column
+                margin-bottom: 3.3rem
+                &::last-of-type
+                    margin-bottom: 0
+    &__policy
+        margin-top: -3.3rem
+        margin-bottom: 2.781rem
+    &__button
+        width: 213px
+        height: 51px
+        line-height: 18px
+        align-self: flex-end

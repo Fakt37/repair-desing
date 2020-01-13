@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Сайт компании по ремонту квартир</title>
-</head>
-<body>
-    <header class="header wow fadeInDown">
+    <head>
+        <!--[if lte IE 9]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Сайт компании по ремонту квартир</title>
+    </head>
+
+    <body id="main">
+    <header class="header wow fadeInDown" data-wow-duration="2s">
        <div class="container">
-           <div class="menu wow fadeInDown">
-               <div class="logo menu__logo wow fadeInDown">Repair Design Project</div>
+           <div class="menu wow fadeInDown" data-wow-duration="2s">
+               <div class="logo menu__logo wow fadeInDown" data-wow-duration="2s"><a href="#main">Repair Design Project</a></div>
                <nav class="nav menu__nav">
-                   <a href="#" class="nav__item">Главная</a>
-                   <a href="#" class="nav__item">Проекты</a>
-                   <a href="#" class="nav__item">Замер</a>
-                   <a href="#" class="nav__item">Команда</a>
-                   <a href="#" class="nav__item">Отзывы</a>
-                   <a href="#" class="nav__item">Контакты</a>
+                   <a href="#main" class="nav__item">Главная</a>
+                   <a href="#project" class="nav__item">Проекты</a>
+                   <a href="#step" class="nav__item">Замер</a>
+                   <a href="#comand" class="nav__item">Команда</a>
+                   <a href="#client" class="nav__item">Отзывы</a>
+                   <a href="#contact" class="nav__item">Контакты</a>
                </nav>
                <div class="contacts menu__contacts">
-                   <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                   <button class="button contacts__button button--primary wow pulse" data-toggle="modal" data-wow-delay="4s" data-wow-iteration="3">Заказать звонок</button>
+                   <a href="tel:+79997683299" class="phone header__phone">+7 (999) 768-32-99</a>
+                   <button onclick="ym('56854177', 'reachGoal', 'button'); return true;" class="button header__button button--primary wow pulse" data-toggle="modal" data-wow-delay="4s" data-wow-iteration="3">Заказать звонок</button>
                </div>
            </div>
        </div>
@@ -38,21 +42,21 @@
            </div>
            <div class="container">
                 <div class="hero__content">
-                    <h1 class="title hero__tittle wow fadeIn" data-wow-delay="0.7s">Турецкий ремонт 
+                    <h1 class="title hero__tittle wow fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">Турецкий ремонт 
                     в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-                    <p class="hero__text wow fadeIn" data-wow-delay="1s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-                    <button class="button hero__button button--primary wow fadeIn" data-wow-delay="1.3s">Рассчитать стоимость</button>
-                    <button class="button hero__button button--outline wow fadeIn" data-wow-delay="1.3s">Отправить заявку</button>
+                    <p class="hero__text wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+                    <button onclick="ym('56854177', 'reachGoal', 'button'); return true;" class="button hero__button button--primary wow fadeIn" data-toggle="modal" data-wow-delay="1.3s">Рассчитать стоимость</button>
+                    <button onclick="ym('56854177', 'reachGoal', 'button'); return true;" class="button hero__button hero__button--outline button--outline wow fadeIn" data-toggle="modal" data-wow-delay="1.3s">Отправить заявку</button>
                 </div>
             </div>
-            <a href="#" class="hero__scroll-down wow flash" data-wow-delay="8s">листайте вниз</a>
+            <a href="#project" class="hero__scroll-down wow flash" data-wow-duration="2s" data-wow-delay="8s">листайте вниз</a>
        </section>
        <!-- /.hero -->
        <section class="section section--dark projects">
-           <div class="container">
+           <div class="container" id="project">
                 <div class="section-title section-title--left">
-                    <h2 class="section-title__heading section-title__heading__projects section-title__heading--primary">Завершенные <span class="section-title__heading__word__projects">проекты</span></h2>
-                    <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
+                    <h2 class="section-title__heading section-title__heading__projects section-title__heading--primary">Завершенные <span class="section-title__heading--projects">проекты</span></h2>
+                    <p class="section-title__text section-title__text__projects">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
                 </div>  
                 <div class="row">
                     <div class="col-40">
@@ -170,11 +174,14 @@
                    <!-- /.section-title__image -->
                </div>
                <!-- /.section-title -->
-               <div class="control__video video">
-                   <img src="img/play.svg" alt="Play" class="video__play wow flip">
+               <div class="control__video video" id="player">
+                   <script src="https://www.youtube.com/iframe_api"></script>
+                   <div class="video__play">
+                    <img src="img/play.svg" alt="Play" class="wow flip">
+                   </div>
                </div>
                <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
-               <form action="#" class="form control__form">
+               <form action="send.php" method="POST" onsubmit="ym('56854177', 'reachGoal', 'submit'); return true;" class="form control__form">
                    <div class="control__input-group">
                         <label for="user-name" class="label form__label control__label">Имя</label>
                         <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
@@ -184,9 +191,9 @@
                         <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
                    </div>
                     <button class="button button--primary control__button">Отправить</button>
-                    <div class="policy control__policy">
+                    <div class="policy control__policy control__policy--block">
                         <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox" checked>
-                        <label for="policy-checkbox" class="policy__lable control__policy__lable">Я соглашаюсь с обработкой данных</label>
+                        <label for="policy-checkbox" class="policy__lable control__policy control__policy--label">Я соглашаюсь с обработкой данных</label>
                     </div>
                 </form>
             </div>
@@ -261,9 +268,8 @@
            </div>
            <!-- /.container -->
        </section>
-       <!-- /.section types -->
-       <section class="section desing">
-           <div class="container">
+        <section class="section desing">
+            <div class="container">
             <div class="section-title desing__section-title">
                 <h2 class="section-title__heading wow fadeInDown">Дизайн проект</h2>
                 <!-- /.section-title__heading -->
@@ -333,13 +339,13 @@
             </div>
         </div>
         <!-- /.container -->
-       </section>
-       <!-- /.section desing -->
-       <section class="section--dark steps">
-           <div class="container">
+        </section>
+        <!-- /.section desing -->
+        <section class="section--dark steps">
+            <div class="container" id="step">
             <div class="section-title section-title--left">
                 <span class="section-subtitle">как мы работаем</span>
-                <h2 class="section-title__heading section-title__heading--primary steps-title">6 шагов <span class="section-title__heading__word__steps">до цели</span></h2>
+                <h2 class="section-title__heading section-title__heading--primary steps-title">6 шагов <span class="section-title__heading--steps">до цели</span></h2>
             </div>
             <div class="row">
                 <div class="col-steps-30">
@@ -434,201 +440,210 @@
                     </div>
                 </div>
             </div>
-           </div>
-       </section>
-       <section class="section comand">
-        <div class="container">
-            <div class="section-title comand__section-title section-title--light">
-                <h2 class="section-title__heading wow fadeInDown">Наша команда</h2>
-                <div class="section-title__image">
-                    <img src="img/comand.svg" alt="Наша команда">
-                </div>
-                <!-- /.section-title__image -->
-                <p class="comand__text">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
             </div>
-            <div class="row">
-                <div class="col-30">
-                    <div class="foto comand__foto">
-                        <img src="img/comand/comand-1.jpg" alt="Алексей Колмаков" class="foto__image">
-                        <div class="foto__icon-1"></div>
-                        <div class="foto__text">
-                            <h3 class="foto__name">Алексей Колмаков</h3>
-                            <p class="foto__subtitle">Проектный менеджер</p>
-                            <strong class="foto__experience">ОПыт работы 8 лет</strong>
+        </section>
+        <section class="section comand">
+            <div class="container" id="comand">
+                <div class="section-title comand__section-title section-title--light">
+                    <h2 class="section-title__heading wow fadeInDown">Наша команда</h2>
+                    <div class="section-title__image">
+                        <img src="img/comand.svg" alt="Наша команда">
+                    </div>
+                    <!-- /.section-title__image -->
+                    <p class="comand__text">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+                </div>
+                <div class="row row--comand">
+                    <div class="col-30--comand">
+                        <div class="foto comand__foto">
+                            <img src="img/comand/comand-1.jpg" alt="Алексей Колмаков" class="foto__image">
+                            <div class="foto__icon-1"></div>
+                            <div class="foto__text">
+                                <h3 class="foto__name">Алексей Колмаков</h3>
+                                <p class="foto__subtitle">Проектный менеджер</p>
+                                <strong class="foto__experience">ОПыт работы 8 лет</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30--comand">
+                        <div class="foto comand__foto">
+                            <img src="img/comand/comand-2.jpg" alt="Алиса Сухорукова" class="foto__image">
+                            <div class="foto__icon-2"></div>
+                            <div class="foto__text">
+                                <h3 class="foto__name">Алиса Сухорукова</h3>
+                                <p class="foto__subtitle">Дизайнер</p>
+                                <strong class="foto__experience">Опыт работы 6 лет</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30--comand">
+                        <div class="foto comand__foto">
+                            <img src="img/comand/comand-3.jpg" alt="Давид Волынев" class="foto__image">
+                            <div class="foto__icon-3"></div>
+                            <div class="foto__text">
+                                <h3 class="foto__name">Давид Волынев</h3>
+                                <p class="foto__subtitle">Бригадир</p>
+                                <strong class="foto__experience">ОПыт работы 7 лет</strong>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-30">
-                    <div class="foto comand__foto">
-                        <img src="img/comand/comand-2.jpg" alt="Алиса Сухорукова" class="foto__image">
-                        <div class="foto__icon-2"></div>
-                        <div class="foto__text">
-                            <h3 class="foto__name">Алиса Сухорукова</h3>
-                            <p class="foto__subtitle">Дизайнер</p>
-                            <strong class="foto__experience">Опыт работы 6 лет</strong>
+                <p class="comand__description">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+            </div>
+        </section>
+        <section class="section clients">
+            <div class="container" id="client">
+                <div class="section-title clients__section-title">
+                    <h2 class="section-title__heading wow fadeInDown">Наши клиенты</h2>
+                    <div class="section-title__image">
+                        <img src="img/clients.svg" alt="Наши клиенты">
+                    </div>
+                    <!-- /.section-title__image -->
+                    <p class="clients__text">80% наших клиентов рекомендуют нас своим знакомым и друзьям</p>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="clients__block">
+                                <div class="clients__avatar"><img src="img/clients/clients-1.jpg" alt="Савельева Екатерина Львовна"></div>
+                                <p class="clients__name">Савельева Екатерина Львовна</p>
+                            </div>
+                            <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</div>
+                        </div>
+                        <div class="clients__info">
+                            <span class="clients__area"><img src="img/area.svg" alt="">40 м<sup>2</sup></span>
+                            <span class="clients__date"><img src="img/date.svg" alt="">48 дней</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-30">
-                    <div class="foto comand__foto">
-                        <img src="img/comand/comand-3.jpg" alt="Давид Волынев" class="foto__image">
-                        <div class="foto__icon-3"></div>
-                        <div class="foto__text">
-                            <h3 class="foto__name">Давид Волынев</h3>
-                            <p class="foto__subtitle">Бригадир</p>
-                            <strong class="foto__experience">ОПыт работы 7 лет</strong>
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="clients__block">
+                                <div class="clients__avatar"><img src="img/clients/clients-2.jpg" alt="Большов Михаил Анатольевич"></div>
+                                <p class="clients__name">Большов Михаил Анатольевич</p>
+                            </div>
+                            <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Я рекомендую этих мастеров.</div>
+                        </div>
+                        <div class="clients__info">
+                            <span class="clients__area"><img src="img/area.svg" alt="">90 м<sup>2</sup></span>
+                            <span class="clients__date"><img src="img/date.svg" alt="">128 дней</span>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="clients__block">
+                                <div class="clients__avatar"><img src="img/clients/clients-3.jpg" alt="Хасанов Даниил Муратович"></div>
+                                <p class="clients__name">Хасанов Даниил Муратович</p>
+                            </div>
+                            <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Цены демократические.</div>
+                        </div>
+                        <div class="clients__info">
+                            <span class="clients__area"><img src="img/area.svg" alt=""> 56 м<sup>2</sup></span>
+                            <span class="clients__date"><img src="img/date.svg" alt="">86 дней</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="comand__description">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
-        </div>
-    </section>
-    <section class="section clients">
-        <div class="container">
-            <div class="section-title clients__section-title">
-                <h2 class="section-title__heading wow fadeInDown">Наши клиенты</h2>
-                <div class="section-title__image">
-                    <img src="img/clients.svg" alt="Наши клиенты">
-                </div>
-                <!-- /.section-title__image -->
-                <p class="clients__text">80% наших клиентов рекомендуют нас своим знакомым и друзьям</p>
-            </div>
-            <div class="row">
-                <div class="col-30">
-                    <div class="card clients__card">
-                        <div class="clients__block">
-                            <div class="clients__avatar"><img src="img/clients/clients-1.jpg" alt="Савельева Екатерина Львовна"></div>
-                            <p class="clients__name">Савельева Екатерина Львовна</p>
-                        </div>
-                        <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</div>
-                    </div>
-                    <div class="clients__info">
-                        <span class="clients__area"><img src="img/area.svg" alt="">40 м<sup>2</sup></span>
-                        <span class="clients__date"><img src="img/date.svg" alt="">48 дней</span>
-                    </div>
-                </div>
-                <div class="col-30">
-                    <div class="card clients__card">
-                        <div class="clients__block">
-                            <div class="clients__avatar"><img src="img/clients/clients-2.jpg" alt="Большов Михаил Анатольевич"></div>
-                            <p class="clients__name">Большов Михаил Анатольевич</p>
-                        </div>
-                        <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Я рекомендую этих мастеров.</div>
-                    </div>
-                    <div class="clients__info">
-                        <span class="clients__area"><img src="img/area.svg" alt="">90 м<sup>2</sup></span>
-                        <span class="clients__date"><img src="img/date.svg" alt="">128 дней</span>
-                    </div>
-                </div>
-                <div class="col-30">
-                    <div class="card clients__card">
-                        <div class="clients__block">
-                            <div class="clients__avatar"><img src="img/clients/clients-3.jpg" alt="Хасанов Даниил Муратович"></div>
-                            <p class="clients__name">Хасанов Даниил Муратович</p>
-                        </div>
-                        <div class="clients__comment">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Цены демократические.</div>
-                    </div>
-                    <div class="clients__info">
-                        <span class="clients__area"><img src="img/area.svg" alt=""> 56 м<sup>2</sup></span>
-                        <span class="clients__date"><img src="img/date.svg" alt="">86 дней</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   </main>
-   <footer>
-       <div class="footer section--dark">
-           <div class="container">
-               <div class="footer__wrap">
-                   <h3 class="footer__title">Остались вопросы?</h3>
-                    <form action="#" class="form footer__form">
+        </section>
+    </main>
+    <footer>
+        <div class="footer section--dark">
+            <div class="container">
+                <div class="footer__wrap">
+                    <h3 class="footer__title">Остались вопросы?</h3>
+                    <form action="send.php" method="POST" onsubmit="ym('56854177', 'reachGoal', 'submit'); return true;" class="form footer__form">
                         <div class="input-group footer__input-group">
-                            <label for="user-name" class="label form__label label--light">Имя</label>
-                            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+                            <label for="user-name-footer" class="label form__label label--light">Имя</label>
+                            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name-footer" placeholder="Как вас зовут:">
                         </div>
                         <div class="input-group footer__input-group">
-                            <label for="user-phone" class="label form__label label--light">Телефон</label>
-                            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                            <label for="user-phone-footer" class="label form__label label--light">Телефон</label>
+                            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone-footer" placeholder="Ваш номер телефона:">
                         </div>
                         <div class="input-group footer__input-group footer__input-group--full-width">
-                            <label for="user-quetion" class="label form__label label--light">Вопрос</label>
-                            <input type="text" name="userQuetion" class="input form__input footer__input input--light" id="user-quetion" placeholder="Я хочу спросить:">
+                            <label for="user-quetion-footer" class="label form__label label--light">Вопрос</label>
+                            <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-quetion-footer" placeholder="Я хочу спросить:">
                         </div>
-                        
-                        
                         <div class="policy footer__policy">
-                            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-                            <label for="policy-checkbox" class="policy__lable policy__lable--center">Я соглашаюсь с обработкой данных</label>
+                            <input type="checkbox" name="policyCheckbox" id="policy-checkbox-footer" class="policy__checkbox" checked>
+                            <label for="policy-checkbox-footer" class="policy__lable policy__lable--center">Я соглашаюсь с обработкой данных</label>
                         </div>
                         <button class="button button--primary footer__button">Отправить</button>
                     </form>
-               </div>
-               <p class="footer__subtitle">Ростов на дону, Торговый центр Plaza
-                Прямой телефон +7 (999) 768 32 99</p>
-                <div class="footer__icons">
-                    <a href="#"><img src="img/email-icon.svg" alt=""></a>
-                    <a href="#"><img src="img/instagram-icon.svg" alt=""></a>
                 </div>
-               <div class="map footer__map" id="map"></div>
-           </div>
-       </div>
-       <div class="footer__menu">
+                <div class="footer__info" id="contact">
+                <p class="footer__subtitle">Ростов на дону, Торговый центр Plaza
+                    Прямой телефон <a href="tel:+79997683299" class="phone footer__phone">+7 (999) 768-32-99</a></p>
+                    <div class="footer__icons">
+                        <a href="#"><img src="img/email-icon.svg" class="footer__icons--email" alt=""></a>
+                        <a href="#"><img src="img/instagram-icon.svg" class="footer__icons--instagram" alt=""></a>
+                    </div>
+                    <div class="ymap-container">
+                        <div class="loader loader-default"></div>
+                        <div id="map-yandex"></div>
+                    </div><!-- .ymap-container -->
+                </div>
+            </div>
+        </div>
+        <div class="footer__menu">
             <div class="container">
                 <div class="menu wow fadeInUp">
-                    <div class="logo menu__logo wow fadeInDown">Repair Design Project</div>
+                    <div class="logo menu__logo wow fadeInDown"><a href="#">Repair Design Project</a></div>
                     <nav class="nav menu__nav">
                         <a href="#" class="nav__item">Главная</a>
-                        <a href="#" class="nav__item">Проекты</a>
-                        <a href="#" class="nav__item">Замер</a>
-                        <a href="#" class="nav__item">Команда</a>
-                        <a href="#" class="nav__item">Отзывы</a>
-                        <a href="#" class="nav__item">Контакты</a>
+                        <a href="#project" class="nav__item">Проекты</a>
+                        <a href="#step" class="nav__item">Замер</a>
+                        <a href="#comand" class="nav__item">Команда</a>
+                        <a href="#client" class="nav__item">Отзывы</a>
+                        <a href="#contact" class="nav__item">Контакты</a>
                     </nav>
                     <div class="contacts menu__contacts">
-                        <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                        <button class="button contacts__button button--primary wow pulse" data-toggle="modal" data-wow-delay="4s" data-wow-iteration="3">Заказать звонок</button>
+                        <a href="tel:+79997683299" class="phone header__phone">+7 (999) 768-32-99</a>
+                        <button onclick="ym('56854177', 'reachGoal', 'button'); return true;" class="button header__button button--primary wow pulse" data-toggle="modal" data-wow-delay="4s" data-wow-iteration="3">Заказать звонок</button>
                     </div>
                 </div>
             </div>
-       </div>
-   </footer>
-   <div class="modal">
+        </div>
+    </footer>
+    <div class="modal">
         <div class="modal__dialog">
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
-            <form action="send.php" method="POST" class="form modal__form">
+            <form action="send.php" method="POST" onsubmit="ym('56854177', 'reachGoal', 'submit'); return true;" id="modal-form" class="form modal__form">
                 <div class="input-group modal__input-group">
-                    <label for="user-name" class="label form__label label--light">Имя</label>
-                    <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+                    <label for="user-name-modal" class="label form__label label--light">Имя</label>
+                    <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name-modal" placeholder="Как вас зовут:">
                 </div>
                 <div class="input-group modal__input-group">
-                    <label for="user-phone" class="label form__label label--light">Телефон</label>
-                    <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+                    <label for="user-phone-modal" class="label form__label label--light">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone-modal" placeholder="Ваш номер телефона:">
                 </div>
                 <div class="input-group modal__input-group">
-                    <label for="user-email" class="label form__label label--light">Email</label>
-                    <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
+                    <label for="user-email-modal" class="label form__label label--light">Email</label>
+                    <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email-modal" placeholder="Ваш email:">
                 </div>
                 <div class="policy modal__policy">
-                    <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox" checked>
-                    <label for="policy-checkbox" class="policy__lable">Я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" name="policyCheckbox" id="policy-checkbox-modal" class="policy__checkbox" checked>
+                    <label for="policy-checkbox-modal" class="policy__lable">Я соглашаюсь с обработкой данных</label>
                 </div>
-                <button class="button button--primary modal__button">Отправить заявку</button>
+                <button name="btn-modal" class="button button--primary modal__button">Отправить заявку</button>
             </form>
         </div>
         <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+    <div class="modal__thanks">
+        <div class="modal__thanks__dialog">
+            <button class="modal__thanks__close"></button>
+            <h3 class="modal__thanks__title">Спасибо за заявку, наш менеджер свяжется с Вам в ближайшее время! А пока вы можете подписать на нашу группу ВКонтакте. <a href="https://vk.com/public188743584" class="modal__thanks--link" target="_blank">Подписаться!</a></h3>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
     <a id="button-up" class="button-up"></a>
-
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ba048591-32ec-4859-99fe-2c4e993f5320&lang=ru_RU" type="text/javascript"></script>
+    <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(56854177, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/56854177" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+    </body>
 </html>

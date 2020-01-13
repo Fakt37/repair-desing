@@ -43,6 +43,9 @@
         height: 3.64rem
         max-width: 14.78rem
         width: 100%
+        padding: 1.214rem 1.785rem 1.142rem 1.785rem
+        &--outline
+            padding: 1.214rem 3rem
     &__instagram
         position: absolute
         left: 0
@@ -66,7 +69,7 @@
         font-family: 'Yeseva One', cursive
         font-size: 0.85rem
         line-height: 138.6%
-        &::after
+        &:after
             content: ''
             background: url('../img/arrow-down.svg') no-repeat center
             width: 30px
@@ -74,6 +77,9 @@
             border: 1.5px solid $primary
             border-radius: 50%
             margin-left: 1.21rem
+        &:hover
+            color: $primary
+            transition: all 0.4s
 .instagram
     display: flex
     justify-content: center

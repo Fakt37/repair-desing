@@ -2,18 +2,22 @@
     box-sizing: border-box
 html
     font-size: 14px
+    
 body
     font-family: 'Futura Book', sans-serif
     font-size: 1rem
+    
 img
     max-width: 100%
 .section
-    padding: 60px 0
+    padding: 0
+    padding-top: 83px
+    background: url('../img/bg-lines-light.png') no-repeat center / cover
     &-steps
         &-title
             margin-top: 18px
     &--dark
-        background-color: $dark
+        background: $dark url('../img/footer-bg-wrap.png') no-repeat center / cover
         color: $light
     &-subtitle
         font-family: 'Futura Demi'
@@ -44,7 +48,7 @@ img
                 letter-spacing: -0.07em
             &--primary
                 color: $primary
-            &__word__projects
+            &--projects
                 display: flex
                 align-items: center
                 &::after
@@ -53,7 +57,7 @@ img
                     height: 1px
                     background-color: $primary
                     margin-left: 2.4rem
-            &__word__steps
+            &--steps
                 display: flex
                 align-items: center
                 &::after
@@ -72,7 +76,7 @@ img
             display: flex
             justify-content: center
             align-items: center
-            margin-top: 1rem
+            margin-top: 1.4rem
             &::before, &::after
                 content: ''
                 width: 32px
@@ -81,7 +85,7 @@ img
                 margin: 0 10px
         &__description
             margin: auto
-            margin-top: 1.714rem
+            margin-top: 1.25rem
             margin-bottom: 2.79rem
             font-size: 1.42rem
             line-height: 1.93rem
